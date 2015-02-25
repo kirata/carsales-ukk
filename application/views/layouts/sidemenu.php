@@ -48,7 +48,7 @@
             </li>
             <li class="dropdown show-on-hover">
                 <a href="javascript:;" data-toggle="dropdown">
-                    <i class="fa fa-tasks"></i>
+                    <i class="fa fa-user"></i>
                     <span>Pengguna</span>
                 </a>
                 <ul class="dropdown-menu">
@@ -60,6 +60,39 @@
                     <li>
                         <a href="<?php echo site_url('app/page/kelola_pengguna'); ?>" class="linkmenu">
                             <span>Kelola Pengguna</span>
+                        </a>
+                    </li>                            
+                </ul>
+            </li>
+            <li class="dropdown show-on-hover">
+                <a href="javascript:;" data-toggle="dropdown">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>Laporan</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="<?php echo site_url('app/page/laporan/cash'); ?>" class="linkmenu">
+                            <span>Transaksi Cash</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('app/page/laporan/kredit'); ?>" class="linkmenu">
+                            <span>Transaksi Kredit</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('app/page/laporan/cicilan'); ?>" class="linkmenu">
+                            <span>Transaksi Cicilan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('app/page/laporan/mobil'); ?>" class="linkmenu">
+                            <span>Mobil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('app/page/laporan/pembeli'); ?>" class="linkmenu">
+                            <span>Pembeli</span>
                         </a>
                     </li>                            
                 </ul>

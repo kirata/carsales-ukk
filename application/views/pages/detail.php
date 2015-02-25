@@ -91,7 +91,7 @@ else if($condition == "pengguna"){
                     </tr> 
                     <tr>
                       <td width="20%">Status Akun</td>
-                      <td><?=$m->statusW;?></td>
+                      <td><?=$m->status;?></td>
                     </tr>  
                   </table>
 </div>

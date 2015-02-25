@@ -32,17 +32,17 @@
 
 		}
 	?>
-	<div class="table-responsive">
-                                <table class="table table-bordered table-striped">
-                                    <thead>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped mg-t dable">
+    <thead>
                                         <tr>
                                             <th width="5%">No</th>
                                             <th>Merk</th>
                                             <th>Tipe</th>
-                                            <th colspan="3" width="15%">Opsi</th>
+                                            <th width="25%">Opsi</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+<tbody>
                                         <?php 
                                         $no=0; 
                                         foreach ($mobil_mobil->result() as $m) {
@@ -52,41 +52,17 @@
                                             <td><?=$no;?></td>
                                             <td><?=$m->merk;?></td>
                                             <td><?=$m->type;?></td>
-                                            <td><a href="<?php echo site_url('app/page/detail/mobil/'.$m->kode_mobil); ?>" title="Selengkapnya" class="btn btn-default btn-outline btn-sm"><i class="fa fa-file-text"></i> Detail</a></td>
-                                            <td><a href="<?php echo site_url('app/page/edit/mobil/'.$m->kode_mobil); ?>" title="Modifikasi" class="btn btn-success btn-outline btn-sm"><i class="fa fa-pencil"></i> Ubah</a></td>
-                                            <td><a href="<?php echo site_url('app/hapusMobil/'.$m->kode_mobil); ?>" title="Hapus" class="btn btn-danger btn-outline btn-sm" onclick="return confirm('Apa Anda Yakin Ingin Menghapus ?')"><i class="fa fa-trash"></i> Hapus</a></td></td>
+                                            <td><a href="<?php echo site_url('app/page/detail/mobil/'.$m->kode_mobil); ?>" title="Selengkapnya" class="btn btn-default btn-outline btn-sm"><i class="fa fa-file-text"></i></a>
+                                            <a href="<?php echo site_url('app/page/edit/mobil/'.$m->kode_mobil); ?>" title="Modifikasi" class="btn btn-success btn-outline btn-sm"><i class="fa fa-pencil"></i></a>
+                                            <a href="<?php echo site_url('app/hapusMobil/'.$m->kode_mobil); ?>" title="Hapus" class="btn btn-danger btn-outline btn-sm" onclick="return confirm('Apa Anda Yakin Ingin Menghapus ?')"><i class="fa fa-trash"></i></a>
+                                            </td>
                                         </tr>
                                         <?php
                                         }
                                         ?>
                                     </tbody>
-                                </table>
-                                <div class="text-right">
-                                    <ul class="pagination pagination-sm">
-                                        <li>
-                                            <a href="javascript:;">&laquo;</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">2</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">5</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">&raquo;</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+    </table>
+ </div>
 
 </div>
 </section>
