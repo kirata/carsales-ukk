@@ -1,7 +1,0 @@
-1.	Tambah tabel pengguna : Menambah fitur login
-2.	Tambah field stok di tabel mobil : Untuk kebutuhan, item menggunakan stok
-3.	[BUG] Kelola Akun Admin Yang Login
-4.	[BUG] Tak Menggunakan Validasi Saat di Form Input
-5.	[BUG] 
-
-
